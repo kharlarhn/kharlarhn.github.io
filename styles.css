@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Beige background color */
+  }
+  
+
+
+header {
+    background-color: #f5f5dc; /* Beige background color for the header */
+    color: #000; /* Black text color */
+    text-align: center; /* Center-align text */
+    padding: 1em 20px; /* Add padding to the header */
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Add space between elements */
+    align-items: center;
+    position: fixed; /* Make the header fixed/sticky */
+    top: 0; /* Stick it to the top of the viewport */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* Center-align items */
+    margin-right: 20px; /* Adjust the right margin */
+  }
+  
+  
+  nav a {
+    color: #000; /* Black text color */
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    transition: font-weight 0.3s; /* Add font-weight to the transition */
+  }
+  
+  nav a:hover {
+    font-weight: bold; /* Make the text bold on hover */
+  }
+  
+  nav a.active {
+    font-weight: bold; /* Keep the text bold for the active link */
+  }
+  
+  .section-title {
+    color: #000; /* Black text color */
+  }
+  
+  section {
+    padding: 80px 20px;
+    text-align: center; /* Center-align text within sections */
+  }
+  
+  .home-section,
+  .about-section,
+  .skills-section,
+  .works-section,
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content,
+  .about-content,
+  .skills-content,
+  .works-content,
+  .contact-content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image,
+  .about-image,
+  .skills-image,
+  .works-image,
+  .contact-image {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .home-image img,
+  .about-image img,
+  .skills-image img,
+  .works-image img,
+  .contact-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .home-description,
+  .about-description,
+  .skills-description,
+  .works-description,
+  .contact-description {
+    flex: 1;
+    margin: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .home-description h2,
+  .about-description h2,
+  .skills-description h2,
+  .works-description h2,
+  .contact-description h2 {
+    font-size: 2em;
+  }
+  
+  .home-description p,
+  .about-description p,
+  .skills-description p,
+  .works-description p,
+  .contact-description p {
+    font-size: 1em;
+  }
+  
+  .view-works-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .skills-left,
+  .skills-right {
+    flex: 1;
+  }
+  
+  .skills-left h3,
+  .skills-right h3 {
+    font-size: 1.5em;
+  }
+  
+  .progress-bar {
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .certification img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image {
+    margin: 10px;
+  }
+  
+
+/* Works section layout */
+.works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ 
+
+/* Image Slider layout */
+.image-slider {
+    display: flex;
+    width: 100%; /* Adjusted width to prevent wrapping */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    scroll-snap-type: x mandatory; /* Snap to each slide */
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Make each slide occupy the full width */
+    scroll-snap-align: start; /* Snap each slide to the start */
+  }
+  
+ 
+  
+  
+  .slide img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .slide-description {
+    margin-top: 10px;
+  }
+  
+  /* Navigation arrows */
+  .prev-btn,
+  .next-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+
+/* Contact section layout */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Contact Content layout */
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1;
+  }
+  
+  .contact-left img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+  }
+  
+  .contact-right form {
+    text-align: left;
+  }
+  
+  .contact-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-right label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-right button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
