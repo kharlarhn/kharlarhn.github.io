@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <title>Kharla's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="section-title">My Portfolio</h1>
+    <nav>
+      <a href="#home" onclick="scrollToSection('#home')">Home</a>
+      <a href="#about" onclick="scrollToSection('#about')">About Me</a>
+      <a href="#skills" onclick="scrollToSection('#skills')">Skills</a>
+      <a href="#works" onclick="scrollToSection('#works')">Works</a>
+      <a href="#contact" onclick="scrollToSection('#contact')">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="home-section">
+    <div class="home-content">
+      
+      
+
+       <!-- Container for Image  -->
+    <div class="image-container">
+      <img src="home-image.png" alt="Your Image">
+      
+    </div>
+
+
+      <div class="home-description">
+        <h2>Web Developer</h2>
+        <p>
+            Introducing "My Portfolio" a thoughtfully developed portfolio 
+            project created to show my skills and progress in the field of web development over the 
+            course of my academic career. It is a digital showcase for my abilities and achievements, 
+            My Portfolio collects a variety of projects I've worked on while in school, from dynamic 
+            web apps to responsive webpages. 
+        </p>
+
+        <p>
+          This portfolio shows not just the technical parts of my work but also the teamwork
+          abilities that I have developed from group projects. When you explore my website, 
+          you will see a range of tasks from basic HTML and CSS projects to more complex ones
+          that use libraries, frameworks, and JavaScript. My portfolio is the evidence of my 
+          development as a web developer and my commitment to ongoing education and innovation 
+          in the academic environment.
+        </p>
+
+        <a href="#works" class="view-works-btn" onclick="scrollToSection('#works')">View Works</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about-section">
+    <div class="about-content">
+
+      <div class="about-image">
+        <img src="about-image.png" alt="About Me Image">
+      </div>
+
+      <div class="about-description">
+        <h2>About Me</h2>
+        <p>
+          Your about me content goes here. 
+          Provide details about your background, education, and professional experience.
+        </p>
+        <a href="#works" class="view-works-btn" onclick="scrollToSection('#works')">View Works</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="section-content">
+      <h2>Skills and Certifications</h2>
+  
+      <!-- Container for Skills and Certifications -->
+      <div class="skills-and-certifications-container">
+  
+        <!-- Container for Programming Languages -->
+        <div class="skills-container">
+          <div class="skills-left">
+            <h3>Languages</h3>
+  
+            <!-- Progress Bar for HTML/CSS -->
+            <div class="progress-title">HTML</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+  
+            <!-- Progress Bar for JavaScript -->
+            <div class="progress-title">CSS</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+  
+            <!-- Progress Bar for Python -->
+            <div class="progress-title">JS</div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Container for Certifications -->
+        <div class="certifications-container">
+          <div class="certifications-right">
+            <h3>Certifications</h3>
+            <div class="certification">
+              <img src="cert1.png" alt="Certification 1">
+            </div>
+            <div class="certification">
+              <img src="cert2.png" alt="Certification 2">
+            </div>
+            
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+
+  
+<!-- Works Page Section -->
+<section id="works" class="works-section">
+  <div class="section-content">
+    <h2>Portfolio</h2>
+
+    <!-- Container for Works Items -->
+    <div class="works-container">
+      <!-- Works Item 1 -->
+      <div class="works-item">
+        <h3>Wordpress Project with Google Anayltics Report</h3>
+        <p>Date: November 18, 2023</p>
+        <p>Project Description: Making a wordpress website for a business and tracking it using Google Anayltics and SEO Optimization</p>
+        <p>Website Link: <a href="https://wearpotential.com/" target="_blank">Wear Potential</a></p>
+
+        <!-- Image Box 1 -->
+        <div class="image-box">
+          <img src="works/proj1.jpg" alt="Box 1 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 1 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+      <!-- Works Item 2 -->
+      
+      <div class="works-item">
+        <h3>WordPress Blog Individual Project</h3>
+        <p>Date: March 14, 2023</p>
+        <p>Project Description: Creating your own WordPress site
+          (Individual Project from Midterm-Finals) </p>
+        <p>Website Link: <a href="https://kharlablogs.wordpress.com/" target="_blank">Kharla Blogs</a></p>
+
+        <!-- Image Box 2 -->
+        <div class="image-box">
+          <img src="works/proj2.jpg" alt="Box 2 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 2 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+        <!-- Works Item 3 -->
+      
+      <div class="works-item">
+        <h3>Read Rover Finals Project</h3>
+        <p>Date: November 16, 2023</p>
+        <p>Project Description: 
+          To build custom and unique integrations using various web applications available in the internet.
+          To implement these custom integrations in a hypothetical corporate website.
+          To implement a cloud to local or cloud to cloud data synchronization. </p>
+        <p>Website Link: <a href="https://asi-workspace.bitbucket.io/" target="_blank">Read Rover</a></p>
+    
+        <!-- Image Box 3 -->
+        <div class="image-box">
+          <img src="works/proj3.jpg" alt="Box 3 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 3 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+        <!-- Works Item 4 -->
+      
+      <div class="works-item">
+        <h3>Web Application Proposal Flawless Findings using MongoDB</h3>
+        <p>Date: September 2023</p>
+        <p>Project Description: In turning this web application into life we 
+          needed resources that would help us build a pleasing output. The main 
+          attraction in making this is the database that will house the items 
+          in our skincare review web application using MongoDB </p>
+        <p>Documentation Link: <a href="https://docs.google.com/document/d/1GkGcAJJAKwdFMI0ChfCf5hkJW_N1W_yzxMfLfLTsxTA/edit?usp=sharing" target="_blank">Flawless Findings</a></p>
+        
+        <!-- Image Box 4 -->
+        <div class="image-box">
+          <img src="works/proj4.png" alt="Box 4 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 4 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+      <!-- Works Item 5 -->
+      
+      <div class="works-item">
+        <h3>Final Project in OOPLANG Sky Airline using Netbeans and SQL</h3>
+        <p>Date: November 2022</p>
+        <p>Project Description: The Airline Management System is essentially a menu-driven program. 
+          This format is created with the needs of the user in mind. This is done to make the user's
+           life easier and faster. The system is able to provide much information like passenger's 
+           information, ticket number , booking, and ticket cancellation.  </p>
+        <p>Documentation Link: <a href="https://docs.google.com/document/d/1Oq1OCYJ8FaLLZrXBhzG--5yGLYjjPX5AqSi3KSJOqmw/edit?usp=sharing" target="_blank">Sky Airlines</a></p>
+
+        <!-- Image Box 5 -->
+        <div class="image-box">
+          <img src="works/proj5.jpg" alt="Box 5 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 5 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+      
+        <!-- Works Item 6 -->
+      
+      <div class="works-item">
+        <h3>Speak Sharp Final Output for INFOMAN using XAMPP, PHP, and SQL</h3>
+        <p>Date: May 2023</p>
+        <p>Project Description: To provide online language learning courses to foreigners who want to learn new languages
+          To offer a convenient and easy way for users to take online courses by using CRUD
+          To establish online presence by providing quality materials to the users
+          To regularly update information on the database and maintain the website
+          </p>
+        <p>Documentation Link: <a href=https://docs.google.com/document/d/1r_jgcLwN25mGX2jcWNUiXmQ7tcfbJQI_yyPagSUz4ME/edit?usp=sharing"" target="_blank">Speak Sharp</a></p>
+
+
+        <!-- Image Box 6 -->
+        <div class="image-box">
+          <img src="works/proj6.jpg" alt="Box 6 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 6 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+      <!-- Works Item 7 -->
+      
+      <div class="works-item">
+        <h3> C'est la Vie Botique WCServer Project </h3>
+        <p>Date: May 2023</p>
+        <p>Project Description: This website project's main objective is to give customers a seamless, user-friendly, and secure 
+          online buying experience. This project also intends to give business owners effective control of their inventory, 
+          orders, and payments.</p>
+        <p>Github Link: <a href="https://github.com/jrnng/WCSERVER-FINALS.git" target="_blank">C'est la Vie Botique</a></p>
+        <p>Documentation Link: <a href="https://docs.google.com/document/d/1rorDqztHqJ8hq7ctTZQklsuJfdlii-x84TA8Cz31vkQ/edit?usp=sharing" target="_blank">C'est la Vie Botique</a></p>
+
+        <!-- Image Box 7 -->
+        <div class="image-box">
+          <img src="works/proj7.jpg" alt="Box 7 Image">
+        </div>
+
+       <!-- Buttons for Preview, Edit, and Resize -->
+       <div class="action-buttons">
+        <button onclick="previewWorksItem(1)">Preview Item</button>
+        <button onclick="editWorksItem(1)">Edit Item</button>
+        <button onclick="attachBox1Image(1)">Attach Project 7 Image</button>
+        <!-- Add more buttons for additional actions -->
+      </div>
+      </div>
+
+      <!-- Works Item 8 -->
+      
+      <div class="works-item">
+        <h3>Final Website for WebTech using HTML/CSS & JS</h3>
+        <p>Date: November 2022 </p>
+        <p>Project Description: Creating a website with minimum of 3 linked webpages.
+          Webpage must have forms that may function with very minimal JavaScript or PHP
+          Webpages must be cohesive to other pages with design theme and layouts
+          CSS must be external or separate file</p>
+        <p>Github Link: <a href="https://github.com/kharlarhn/webtech.git" target="_blank">My Website</a></p>
+  
+        <!-- Image Box 6 -->
+        <div class="image-box">
+          <img src="works/proj8.jpg" alt="Box 8 Image">
+        </div>
+
+        <!-- Buttons for Preview, Edit, and Resize -->
+        <div class="action-buttons">
+          <button onclick="previewWorksItem(1)">Preview Item</button>
+          <button onclick="editWorksItem(1)">Edit Item</button>
+          <button onclick="attachBox1Image(1)">Attach Project 8 Image</button>
+          <!-- Add more buttons for additional actions -->
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+  
+<section id="contact" class="contact-section">
+    <div class="section-content">
+      <h2>Contact Me</h2>
+  
+      <!-- Contact Content -->
+      <div class="contact-content">
+        <!-- Left side with image and social media icons -->
+        <div class="contact-left">
+          <img src="contact-image.png" alt="Contact Image">
+          <div class="social-icons">
+            <!-- Add social media icons as needed -->
+            <a href="https://www.facebook.com/kharlarhn?mibextid=LQQJ4d" target="_blank"><img src="icons/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/kharlarhnn/?next=%2F" target="_blank"><img src="icons/ig.png" alt="Instagram"></a>
+            <a href="https://github.com/kharlarhn" target="_blank"><img src="icons/github.png" alt="Github"></a>
+            <!-- Add more social media icons as needed -->
+          </div>
+        </div>
+  
+        <!-- Right side with contact form -->
+        <div class="contact-right">
+          <h3>Ready to work with me?</h3>
+          <form>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+  
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+  
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+  
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
