@@ -5,23 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-
+  <link rel="shortcut icon" href="mylogo.png" type="image/x-icon">
+  
   <title>Kharla's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1 class="section-title">My Portfolio</h1>
-    <nav>
-      <a href="#home" onclick="scrollToSection('#home')">Home</a>
-      <a href="#about" onclick="scrollToSection('#about')">About Me</a>
-      <a href="#skills" onclick="scrollToSection('#skills')">Skills</a>
-      <a href="#works" onclick="scrollToSection('#works')">Works</a>
-      <a href="#contact" onclick="scrollToSection('#contact')">Contact</a>
-    </nav>
-  </header>
+ <!-- Banner -->
+<div class="popup-banner" id="banner">
+  <a href="#works">
+    <img src="banner.gif" alt="">
+  </a>
+  <button class="close-btn">
+    <img src="exit.png" alt="Close Button">
+  </button>
+</div>
+
+<header>
+  <h1 class="section-title">My Portfolio</h1>
+  <nav>
+    <a href="#home" class="active" onclick="scrollToSection('#home', this)">Home</a>
+    <a href="#about" onclick="scrollToSection('#about', this)">About Me</a>
+    <a href="#skills" onclick="scrollToSection('#skills', this)">Skills</a>
+    <a href="#works" onclick="scrollToSection('#works', this)">Works</a>
+    <a href="#contact" onclick="scrollToSection('#contact', this)">Contact</a>
+  </nav>    
+</header>
+
+
 
   <section id="home" class="home-section">
     <div class="home-content">
@@ -68,6 +80,7 @@
       </div>
 
       <div class="about-description">
+        <br>
         <h2>About Me</h2>
 
         <h1> Hello! I'm Kharla Rhoen A. Manabat</h1>
@@ -141,6 +154,7 @@
 <!-- Works Page Section -->
 <section id="works" class="works-section">
   <div class="section-content">
+    <br><br><br>
     <h2>Portfolio</h2>
 
     <!-- Container for Works Items -->
@@ -355,7 +369,7 @@
       <div class="contact-content">
         <!-- Left side with image and social media icons -->
         <div class="contact-left">
-          <img src="contact-image.png" alt="Contact Image">
+          <img src="klogo.png" alt="Contact Image">
           <div class="social-icons">
             <!-- Add social media icons as needed -->
             <a href="https://www.facebook.com/kharlarhn?mibextid=LQQJ4d" target="_blank"><img src="fb.png" alt="Facebook"></a>
@@ -389,9 +403,7 @@
     </div>
   </section>
   
-  
 
-  
   <script src="script.js"></script>
 
 </body>

@@ -1,3 +1,12 @@
+function scrollToSection(sectionId, link) {
+  document.querySelectorAll('nav a').forEach(function (a) {
+      a.classList.remove('active');
+  });
+  link.classList.add('active');
+  // Add your scrolling logic here if needed
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav a');
   
@@ -49,5 +58,19 @@ function attachBox1Image(itemId) {
   console.log(`Attach Box 1 Image for Works Item ${itemId}`);
 }
 
-// Add more JavaScript functions for other actions as needed
-
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var banner = document.getElementById("banner");
+    banner.classList.add("slide-in");
+  }, 2000); // 2000 milliseconds = 2 seconds
+  
+  // Get the close button element
+  var closeButton = document.querySelector(".close-btn img");
+  
+  // Add a click event listener to the close button
+  closeButton.addEventListener("click", function() {
+    // Slide up and hide the banner
+    var banner = document.getElementById("banner");
+    banner.classList.add("banner-hidden");
+  });
+});
