@@ -1,0 +1,639 @@
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambria', sans-serif;
+    background-color: #faf9f8; /* Cream background color */
+    color: #000; /* Black text color */
+  }
+
+  header {
+    background-color:  #faf9f8;
+    color: #000; /* Black text color */
+    text-align: center;
+    padding: 1em 20px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 20px;
+    transition: font-weight 0.3s;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+  
+  section {
+    padding: 80px 20px;
+    text-align: center; /* Center-align text within sections */
+  }
+  
+
+/* Home Description */
+
+body .home-description {
+  margin-left: 80px;
+}
+
+
+body .home-description h2 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+
+body .home-description p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/* About Description */
+
+
+.about-section {
+  background-color: #e8e3de; /* Set the desired background color */
+  padding: 40px 0; /* Add padding to the About section */
+  text-align: center;
+}
+
+body .about-description {
+  margin-left: 80px;
+}
+
+
+body .about-description h2 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+
+body .about-description p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+  .home-section,
+  .about-section,
+  .skills-section,
+  .works-section,
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-content,
+  .about-content,
+  .skills-content,
+  .works-content,
+  .contact-content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image,
+  .about-image,
+  .skills-image,
+  .works-image,
+  .contact-image {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .home-image img,
+  .about-image img,
+  .skills-image img,
+  .works-image img,
+  .contact-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .home-description,
+  .about-description,
+  .skills-description,
+  .works-description,
+  .contact-description {
+    flex: 1;
+    margin: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .home-description h2,
+  .about-description h2,
+  .skills-description h2,
+  .works-description h2,
+  .contact-description h2 {
+    font-size: 2em;
+  }
+  
+  .home-description p,
+  .about-description p,
+  .skills-description p,
+  .works-description p,
+  .contact-description p {
+    font-size: 1em;
+  }
+  
+  .works-content {
+    margin-top: 100px;
+  }
+
+
+/* View Works button */
+.view-works-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #000; /* Black outline */
+  border-radius: 20px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-works-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+/* Container for Programming Languages */
+
+.skills-section h2 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  line-height: 1.2;
+}
+
+.skills-container {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.skills-left {
+  text-align: left;
+}
+
+.skills-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.progress-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  margin-bottom: 40px;
+  overflow: hidden;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #c1b8b3;
+}
+
+.progress {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+  background-color: #60453e;
+  transition: width 0.5s ease-in-out;
+  animation: pulsate 1.5s infinite alternate; /* Pulsating animation */
+}
+
+  .certification img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image {
+    margin: 10px;
+  }
+  
+
+
+/* Container for Skills and Certifications */
+.skills-and-certifications-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Adjust the margin bottom as needed */
+}
+
+
+/* Container for Programming Languages */
+.skills-container {
+  flex: 0.45; /* Adjust the flex value for skills */
+  text-align: center; /* Center the content inside .skills-container */
+}
+
+.skills-left {
+  text-align: left; /* Align the text content to the left within .skills-left */
+}
+
+.skills-container h3,
+.skills-container .progress-bar {
+  text-align: left; /* Align the content inside .skills-container to the left */
+  line-height: 1.2;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+
+.skills-container .progress-bar {
+  text-align: left;
+  line-height: 1.2;
+  font-size: 45px;
+  margin-bottom: 20px;
+  width: 0;
+  animation: fillProgress 2s ease-out forwards; /* Sliding animation */
+}
+
+@keyframes fillProgress {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+.skills-container .progress-title {
+  text-align: left; /* Align the content inside .skills-container to the left */
+  letter-spacing: 3px;
+  line-height: 1.2;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+.skills-certifications-space {
+  flex: 0.1; /* Adjust the flex value to control the width of the space */
+  background-color: white; /* White background color for the space */
+}
+
+
+/* Container for Certifications */
+.certifications-container {
+  flex: 0.5; /* Adjust the flex value for certifications */
+  margin-right: 20px; /* Adjust the margin-right to create more space on the right */
+  text-align: center; /* Center the content inside .certifications-container */
+}
+
+.certifications-container h3 {
+  margin-bottom: 10px;
+  text-align: left; /* Align the h3 heading to the left */
+  line-height: 1.2;
+  font-size: 45px;
+}
+
+.certification {
+  margin-top: 20px;
+  text-align: center;
+  overflow: hidden; /* Ensure overflow is hidden to prevent layout shifting */
+  position: relative; /* Add position relative to enable stacking context */
+}
+
+.certification img {
+  max-width: 100%; /* Set the maximum width to 100% of its container */
+  height: auto;    /* Automatically adjust the height to maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.certification:hover img {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+
+/* Works section layout */
+.works-section {
+  background-color: #e8e3de; /* Set the background color for the works section */
+  padding: 60px 0; /* Add padding to the works section */
+  text-align: center;
+}
+
+.works-section h2 {
+  font-size: 45px;
+  letter-spacing: 5px;
+  line-height: 1.2;
+
+}
+
+
+.works-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.works-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px; /* Adjust the width of each works item as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.works-item:hover {
+  transform: scale(1.05); /* Add a slight scale effect on hover */
+}
+
+.image-box {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  background-color: #755f52; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.action-buttons button:hover {
+  background-color: black; 
+}
+
+
+
+
+
+
+  /* Contact Section */
+
+
+
+  .contact-section h2 {
+    /* Adjust the font size for the "Contact Me" title */
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 1.2;
+  }
+  
+  .contact-right h3 {
+    font-size: 28px; /* Adjust the font size for the "Ready to work with me?" text */
+  }
+  
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+
+/* Contact section layout */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Contact Content layout */
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1;
+    padding: 20px; /* Add padding to create space around the content */
+    text-align: center; /* Center the text content */
+  }
+  
+  .contact-left img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+  }
+  
+  .contact-right form {
+    text-align: left;
+  }
+  
+  .contact-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-right label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-right button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+/* Home section layout */
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Container for Image */
+.image-container {
+  background-color: #e8e3de; 
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.2); /* Shadow on the bottom-left */
+  opacity: 0; /* Set initial opacity to 0 for the animation */
+  animation: slideFromLeft 0.9s ease-in-out forwards; /* Slide animation */
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+
+.about-image img {
+  max-width: 100%; /* Set the maximum width to 100% of its container */
+  height: auto;    /* Automatically adjust the height to maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+}
+
+.about-image:hover img {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+/* Banner styles */
+.popup-banner {
+  position: fixed; /* Fix the banner position */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make it span the full width of the viewport */
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+
+.popup-banner img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.popup-banner {
+  /* Your existing styles */
+  display: none; /* Ensure the banner is initially hidden */
+  transition: transform 0.5s ease; /* Add transition for smooth sliding animation */
+  transform: translateY(0); /* Start with the banner in its original position */
+}
+
+.banner-hidden {
+  transform: translateY(-100%);
+  opacity: 0; /* Fade out the banner */
+  pointer-events: none; /* Disable pointer events on hidden banner */
+}
+
+  
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0; /* Remove padding to fit the image */
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+
+.close-btn img {
+  width: 50px; /* Adjust width as needed */
+}
+
+.slide-in {
+  display: block; /* Make the banner visible */
+  animation: slideIn 0.5s forwards; /* Apply sliding animation */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
